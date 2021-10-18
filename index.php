@@ -14,18 +14,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
 
-        <p> <h2>Paragrafo originale:</h2>  <?php echo $paragraph;?> </p>
+        <form>
+            <label for="word">
+                <input type="text" name='word' id='word' placeholder='inserisci la parola da censurare'>
+                <button type="submit">Vai</button>
+            </label>
+        </form>
+        <h1> parola da censurare: <?php echo $forbiddenWord;?> </h1>
+        <hr>
 
-        <h3> lunghezza paragrafo originale: <?php echo strlen($paragraph);?> </h3>
+        <h2>Paragrafo originale lunghezza --> <?php echo strlen($paragraph);?> </h2> 
+        <p> <?php echo $paragraph;?></p>
 
-        <h2> parola da censurare: <?php echo $forbiddenWord;?> </h2>
 
-        <p> <h1>Paragrafo censurato:</h1> <?php echo $paragraphCensored;?>  </p>
-
-        <h3> lunghezza paragrafo censurato: <?php echo strlen($paragraphCensored);?> </h3>
+        <h2>Paragrafo censurato lunghezza --> <?php echo strlen($paragraphCensored);?> </h2>   
+        <p><?php echo $paragraphCensored ?></p>
 
 
 

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    text-align: center;
+    margin: 3.125rem;
+}
+input{
+    width: 200px;
+}
+
+
+h1{
+    margin-bottom: 1.875rem;
+}
+
+p{
+    border: 1px solid black;
+    margin: 1.875rem;
+}
